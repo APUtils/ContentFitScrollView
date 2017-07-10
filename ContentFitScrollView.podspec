@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ContentFitScrollView'
   s.version          = '1.0.0'
-  s.summary          = 'A short description of ContentFitScrollView.'
+  s.summary          = 'Self adjustable Scroll View that tries to fit all content on screen without scrolling.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,9 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Self adjustable Scroll View that proportionally reducing provided height constraints constants to fit all content on screen without scrolling.
+It takes into account `ContentFitLayoutConstraint`'s `minimumHeight` value.
+If it's unable to fit content on screen without scrolling it'll just allow scrolling.
                        DESC
 
   s.homepage         = 'https://github.com/APUtils/ContentFitScrollView'

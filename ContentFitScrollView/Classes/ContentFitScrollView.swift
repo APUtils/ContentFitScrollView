@@ -118,7 +118,6 @@ public class ContentFitScrollView: UIScrollView {
     
     private func restoreDefaultConstants() {
         for (currentConstraint, constraintProperties) in configurationDictionary {
-            guard let currentAvailableResizeHeight = constraintProperties[availableResizeHeightKey] else { continue }
             guard let currentConstant = constraintProperties[constantKey] else { continue }
             
             currentConstraint.constant = currentConstant
