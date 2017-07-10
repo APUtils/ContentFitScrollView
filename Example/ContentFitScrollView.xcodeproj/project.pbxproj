@@ -15,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6F789B7728FFBA4EB4276FBB /* Pods_ContentFitScrollView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8ED32B88E1EFDB7AEBF8E60 /* Pods_ContentFitScrollView_Tests.framework */; };
+		B06688EC1F13EFAA00A02878 /* ContentFitScrollViewStoryboardClass.png in Resources */ = {isa = PBXBuildFile; fileRef = B06688EA1F13EFAA00A02878 /* ContentFitScrollViewStoryboardClass.png */; };
+		B06688ED1F13EFAA00A02878 /* ContentFitScrollViewStoryboardOutlets.png in Resources */ = {isa = PBXBuildFile; fileRef = B06688EB1F13EFAA00A02878 /* ContentFitScrollViewStoryboardOutlets.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		019160A850CF5286216301AF /* .travis.yml */ = {isa = PBXFileReference; includeInIndex = 1; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
+		019160A850CF5286216301AF /* .travis.yml */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		0D608E5836AC40745A393CA8 /* Pods-ContentFitScrollView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentFitScrollView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContentFitScrollView_Example/Pods-ContentFitScrollView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		1EE95ED3C2FB57417923AEBB /* CHANGELOG.md */ = {isa = PBXFileReference; includeInIndex = 1; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
+		1EE95ED3C2FB57417923AEBB /* CHANGELOG.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ContentFitScrollView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContentFitScrollView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,16 +44,19 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		690D93E971FF11E33D308DF3 /* Pods_ContentFitScrollView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContentFitScrollView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B845AB1BD6B79031EBD9BFB /* ContentFitScrollView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ContentFitScrollView.podspec; path = ../ContentFitScrollView.podspec; sourceTree = "<group>"; };
-		C527519906171517D4F9A393 /* podPush.command */ = {isa = PBXFileReference; includeInIndex = 1; name = podPush.command; path = ../podPush.command; sourceTree = "<group>"; };
-		CF9755E1B3DCD2DCF469A761 /* .cocoadocs.yml */ = {isa = PBXFileReference; includeInIndex = 1; name = .cocoadocs.yml; path = ../.cocoadocs.yml; sourceTree = "<group>"; };
-		D2974FC5B6EC6D8F4CAC1C7B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8B845AB1BD6B79031EBD9BFB /* ContentFitScrollView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ContentFitScrollView.podspec; path = ../ContentFitScrollView.podspec; sourceTree = "<group>"; };
+		B06688E81F13ECBA00A02878 /* ContentFitScrolViewClip.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ContentFitScrolViewClip.gif; sourceTree = "<group>"; };
+		B06688EA1F13EFAA00A02878 /* ContentFitScrollViewStoryboardClass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ContentFitScrollViewStoryboardClass.png; sourceTree = "<group>"; };
+		B06688EB1F13EFAA00A02878 /* ContentFitScrollViewStoryboardOutlets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ContentFitScrollViewStoryboardOutlets.png; sourceTree = "<group>"; };
+		C527519906171517D4F9A393 /* podPush.command */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; name = podPush.command; path = ../podPush.command; sourceTree = "<group>"; };
+		CF9755E1B3DCD2DCF469A761 /* .cocoadocs.yml */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = .cocoadocs.yml; path = ../.cocoadocs.yml; sourceTree = "<group>"; };
+		D2974FC5B6EC6D8F4CAC1C7B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D8ED32B88E1EFDB7AEBF8E60 /* Pods_ContentFitScrollView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContentFitScrollView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4228E95F6789A94F9998181 /* Pods-ContentFitScrollView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentFitScrollView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContentFitScrollView_Tests/Pods-ContentFitScrollView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		EBC2CCBEC83E763B2DC76083 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		EF9854F75AFF06BB695DAA2F /* podCheck.command */ = {isa = PBXFileReference; includeInIndex = 1; name = podCheck.command; path = ../podCheck.command; sourceTree = "<group>"; };
+		EBC2CCBEC83E763B2DC76083 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		EF9854F75AFF06BB695DAA2F /* podCheck.command */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; name = podCheck.command; path = ../podCheck.command; sourceTree = "<group>"; };
 		F2FE6D1749B3C58F43B77FF8 /* Pods-ContentFitScrollView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentFitScrollView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContentFitScrollView_Tests/Pods-ContentFitScrollView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FC436DB6BFAC70C746829EF6 /* .gitignore */ = {isa = PBXFileReference; includeInIndex = 1; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
+		FC436DB6BFAC70C746829EF6 /* .gitignore */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
 		FEE4F0A067C4D4EDB4357BA2 /* Pods-ContentFitScrollView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentFitScrollView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContentFitScrollView_Example/Pods-ContentFitScrollView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,40 +104,42 @@
 		607FACD21AFB9204008FA782 /* Example for ContentFitScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				B06688E61F13EB3000A02878 /* _Gifs */,
+				B06688E71F13EB3400A02878 /* _Images */,
+				607FACD31AFB9204008FA782 /* _Supporting Files */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD31AFB9204008FA782 /* Supporting Files */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
 			);
 			name = "Example for ContentFitScrollView";
 			path = ContentFitScrollView;
 			sourceTree = "<group>";
 		};
-		607FACD31AFB9204008FA782 /* Supporting Files */ = {
+		607FACD31AFB9204008FA782 /* _Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			name = "_Supporting Files";
 			sourceTree = "<group>";
 		};
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				607FACE91AFB9204008FA782 /* _Supporting Files */,
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
+		607FACE91AFB9204008FA782 /* _Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				607FACEA1AFB9204008FA782 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			name = "_Supporting Files";
 			sourceTree = "<group>";
 		};
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
@@ -160,6 +167,23 @@
 				E4228E95F6789A94F9998181 /* Pods-ContentFitScrollView_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B06688E61F13EB3000A02878 /* _Gifs */ = {
+			isa = PBXGroup;
+			children = (
+				B06688E81F13ECBA00A02878 /* ContentFitScrolViewClip.gif */,
+			);
+			name = _Gifs;
+			sourceTree = "<group>";
+		};
+		B06688E71F13EB3400A02878 /* _Images */ = {
+			isa = PBXGroup;
+			children = (
+				B06688EA1F13EFAA00A02878 /* ContentFitScrollViewStoryboardClass.png */,
+				B06688EB1F13EFAA00A02878 /* ContentFitScrollViewStoryboardOutlets.png */,
+			);
+			name = _Images;
 			sourceTree = "<group>";
 		};
 		FA594C172A950EC74A0F6AEF /* Frameworks */ = {
@@ -260,7 +284,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B06688ED1F13EFAA00A02878 /* ContentFitScrollViewStoryboardOutlets.png in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				B06688EC1F13EFAA00A02878 /* ContentFitScrollViewStoryboardClass.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);

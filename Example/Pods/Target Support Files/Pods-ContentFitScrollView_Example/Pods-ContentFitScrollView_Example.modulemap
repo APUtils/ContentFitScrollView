@@ -1,0 +1,6 @@
+framework module Pods_ContentFitScrollView_Example {
+  umbrella header "Pods-ContentFitScrollView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

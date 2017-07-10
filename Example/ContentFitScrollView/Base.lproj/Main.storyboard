@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1Tf-w2-nWx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="QZd-ZW-bqM">
+            <objects>
+                <navigationController id="1Tf-w2-nWx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BKU-6B-35I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="LYl-93-o6p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aEn-qe-ISY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-604" y="123"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="vXZ-lx-hvc" customClass="ViewController" customModule="ContentFitScrollView_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -19,11 +37,103 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mz5-xD-iZv" customClass="ContentFitScrollView" customModule="ContentFitScrollView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5FV-89-y3B" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="479"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhJ-Qr-dDU">
+                                                <rect key="frame" x="170.5" y="8" width="33.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfG-wB-4fT">
+                                                <rect key="frame" x="158" y="229" width="58.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ze2-aT-Hh4">
+                                                <rect key="frame" x="167" y="450" width="40" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="rfG-wB-4fT" firstAttribute="centerX" secondItem="5FV-89-y3B" secondAttribute="centerX" id="H9w-cm-5vs"/>
+                                            <constraint firstItem="ze2-aT-Hh4" firstAttribute="top" secondItem="rfG-wB-4fT" secondAttribute="bottom" constant="200" id="IVn-Ai-P3r" customClass="ContentFitLayoutConstraint" customModule="ContentFitScrollView">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumHeight">
+                                                        <real key="value" value="100"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                            <constraint firstItem="YhJ-Qr-dDU" firstAttribute="centerX" secondItem="5FV-89-y3B" secondAttribute="centerX" id="PR5-t0-K2r"/>
+                                            <constraint firstItem="ze2-aT-Hh4" firstAttribute="centerX" secondItem="5FV-89-y3B" secondAttribute="centerX" id="b0y-hZ-9dg"/>
+                                            <constraint firstItem="rfG-wB-4fT" firstAttribute="top" secondItem="YhJ-Qr-dDU" secondAttribute="bottom" constant="200" id="fOm-J2-5cF" customClass="ContentFitLayoutConstraint" customModule="ContentFitScrollView">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumHeight">
+                                                        <real key="value" value="100"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                            <constraint firstItem="YhJ-Qr-dDU" firstAttribute="top" secondItem="5FV-89-y3B" secondAttribute="top" constant="8" id="pGa-nl-5CX"/>
+                                            <constraint firstAttribute="bottom" secondItem="ze2-aT-Hh4" secondAttribute="bottom" constant="8" id="sT4-bs-wG6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5FV-89-y3B" secondAttribute="trailing" id="Bew-BH-iHe"/>
+                                    <constraint firstItem="5FV-89-y3B" firstAttribute="leading" secondItem="Mz5-xD-iZv" secondAttribute="leading" id="NzB-4M-2L2"/>
+                                    <constraint firstItem="5FV-89-y3B" firstAttribute="top" secondItem="Mz5-xD-iZv" secondAttribute="top" id="YcC-pB-crr"/>
+                                    <constraint firstAttribute="bottom" secondItem="5FV-89-y3B" secondAttribute="bottom" id="bZl-Kg-1EZ"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="heightConstraintsCollection" destination="fOm-J2-5cF" collectionClass="NSMutableArray" id="sNa-b4-Eql"/>
+                                    <outletCollection property="heightConstraintsCollection" destination="IVn-Ai-P3r" collectionClass="NSMutableArray" id="70f-e6-NMT"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mz5-xD-iZv" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Tgk-t4-6xS"/>
+                            <constraint firstAttribute="trailing" secondItem="Mz5-xD-iZv" secondAttribute="trailing" id="UBt-6o-Yss"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Mz5-xD-iZv" secondAttribute="bottom" id="Wpp-md-zdH"/>
+                            <constraint firstItem="5FV-89-y3B" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="sKm-d9-awY"/>
+                            <constraint firstItem="Mz5-xD-iZv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="xf0-a3-A8b"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="l4E-HU-oJe">
+                        <leftBarButtonItems>
+                            <barButtonItem title="Full" id="TXA-lu-cjk">
+                                <connections>
+                                    <action selector="onFullTap:" destination="vXZ-lx-hvc" id="gqL-pm-oet"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Fit" id="n65-zd-CnA">
+                                <connections>
+                                    <action selector="onFitTap:" destination="vXZ-lx-hvc" id="qp1-w3-PtQ"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Scroll" id="KZh-K8-GgN">
+                            <connections>
+                                <action selector="onScrollTap:" destination="vXZ-lx-hvc" id="Bzu-Zd-ckb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="scrollViewTopConstraint" destination="Tgk-t4-6xS" id="X5p-jD-uWM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138" y="123"/>
         </scene>
     </scenes>
 </document>
