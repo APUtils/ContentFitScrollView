@@ -17,6 +17,7 @@
 		6F789B7728FFBA4EB4276FBB /* Pods_ContentFitScrollView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8ED32B88E1EFDB7AEBF8E60 /* Pods_ContentFitScrollView_Tests.framework */; };
 		B06688EC1F13EFAA00A02878 /* ContentFitScrollViewStoryboardClass.png in Resources */ = {isa = PBXBuildFile; fileRef = B06688EA1F13EFAA00A02878 /* ContentFitScrollViewStoryboardClass.png */; };
 		B06688ED1F13EFAA00A02878 /* ContentFitScrollViewStoryboardOutlets.png in Resources */ = {isa = PBXBuildFile; fileRef = B06688EB1F13EFAA00A02878 /* ContentFitScrollViewStoryboardOutlets.png */; };
+		B0A073A61F3A548E001B8CC6 /* podInstall.command in Resources */ = {isa = PBXBuildFile; fileRef = B0A073A51F3A548E001B8CC6 /* podInstall.command */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		B06688E81F13ECBA00A02878 /* ContentFitScrolViewClip.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ContentFitScrolViewClip.gif; sourceTree = "<group>"; };
 		B06688EA1F13EFAA00A02878 /* ContentFitScrollViewStoryboardClass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ContentFitScrollViewStoryboardClass.png; sourceTree = "<group>"; };
 		B06688EB1F13EFAA00A02878 /* ContentFitScrollViewStoryboardOutlets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ContentFitScrollViewStoryboardOutlets.png; sourceTree = "<group>"; };
+		B0A073A51F3A548E001B8CC6 /* podInstall.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = podInstall.command; sourceTree = "<group>"; };
 		C527519906171517D4F9A393 /* podPush.command */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; name = podPush.command; path = ../podPush.command; sourceTree = "<group>"; };
 		CF9755E1B3DCD2DCF469A761 /* .cocoadocs.yml */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = .cocoadocs.yml; path = ../.cocoadocs.yml; sourceTree = "<group>"; };
 		D2974FC5B6EC6D8F4CAC1C7B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -83,7 +85,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				607FACF51AFB993E008FA782 /* _ */,
 				607FACD21AFB9204008FA782 /* Example for ContentFitScrollView */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -142,7 +144,7 @@
 			name = "_Supporting Files";
 			sourceTree = "<group>";
 		};
-		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
+		607FACF51AFB993E008FA782 /* _ */ = {
 			isa = PBXGroup;
 			children = (
 				CF9755E1B3DCD2DCF469A761 /* .cocoadocs.yml */,
@@ -152,10 +154,11 @@
 				8B845AB1BD6B79031EBD9BFB /* ContentFitScrollView.podspec */,
 				EBC2CCBEC83E763B2DC76083 /* LICENSE */,
 				EF9854F75AFF06BB695DAA2F /* podCheck.command */,
+				B0A073A51F3A548E001B8CC6 /* podInstall.command */,
 				C527519906171517D4F9A393 /* podPush.command */,
 				D2974FC5B6EC6D8F4CAC1C7B /* README.md */,
 			);
-			name = "Podspec Metadata";
+			name = _;
 			sourceTree = "<group>";
 		};
 		A64D1A41F9880DCAC6A80CC3 /* Pods */ = {
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B06688ED1F13EFAA00A02878 /* ContentFitScrollViewStoryboardOutlets.png in Resources */,
+				B0A073A61F3A548E001B8CC6 /* podInstall.command in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				B06688EC1F13EFAA00A02878 /* ContentFitScrollViewStoryboardClass.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
@@ -308,13 +312,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ContentFitScrollView_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2B5FA7AF42BD4B1F69EA17DF /* [CP] Embed Pods Frameworks */ = {
@@ -323,9 +330,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ContentFitScrollView_Tests/Pods-ContentFitScrollView_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -353,9 +369,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ContentFitScrollView_Example/Pods-ContentFitScrollView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ContentFitScrollView/ContentFitScrollView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ContentFitScrollView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -383,13 +402,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ContentFitScrollView_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -538,7 +560,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anton-plebanovich.ContentFitScrollView-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -553,7 +575,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anton-plebanovich.ContentFitScrollView-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

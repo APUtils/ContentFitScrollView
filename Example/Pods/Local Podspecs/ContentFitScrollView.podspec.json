@@ -1,7 +1,7 @@
 {
   "name": "ContentFitScrollView",
-  "version": "1.0.0",
-  "summary": "Self adjustable Scroll View that proportionally reducing provided height constraints constants to fit all content on screen without scrolling.",
+  "version": "1.0.1",
+  "summary": "Self adjustable Scroll View that tries to fit all content on screen without scrolling.",
   "description": "Self adjustable Scroll View that proportionally reducing provided height constraints constants to fit all content on screen without scrolling.\nIt takes into account `ContentFitLayoutConstraint`'s `minimumHeight` value.\nIf it's unable to fit content on screen without scrolling it'll just allow scrolling.",
   "homepage": "https://github.com/APUtils/ContentFitScrollView",
   "license": {
@@ -13,10 +13,14 @@
   },
   "source": {
     "git": "https://github.com/APUtils/ContentFitScrollView.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ContentFitScrollView/Classes/**/*"
+  "source_files": "ContentFitScrollView/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "MapKit"
+  ]
 }
