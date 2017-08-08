@@ -24,7 +24,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 **If you are setting `ContentFitScrollView` class in storyboard assure module field is also `ContentFitScrollView`**
 
-<img src="Example/APButton/customClass.png"/>
+<img src="Example/ContentFitScrollView/customClass.png"/>
 
 Please check [official guide](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos)
 
@@ -47,7 +47,7 @@ pod 'ContentFitScrollView'
 
 Just set `ContentFitScrollView` class to UIScrollView in storyboard (usually it's base container), **assure module field is also `ContentFitScrollView`**: 
 
-<img src="Example/ContentFitScrollView/ContentFitScrollViewStoryboardClass.png"/>
+<img src="Example/ContentFitScrollView/customClass.png"/>
 
 and add constraints that you want to be resized in order to fit content for screen:
 
