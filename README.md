@@ -22,6 +22,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 #### Carthage
 
+**If you are setting `ContentFitScrollView` class in storyboard assure module field is also `ContentFitScrollView`**
+
+<img src="Example/APButton/customClass.png"/>
+
 Please check [official guide](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos)
 
 Cartfile:
@@ -41,7 +45,7 @@ pod 'ContentFitScrollView'
 
 ## Usage
 
-Just set `ContentFitScrollView` class to UIScrollView in storyboard (usually it's base container): 
+Just set `ContentFitScrollView` class to UIScrollView in storyboard (usually it's base container), **assure module field is also `ContentFitScrollView`**: 
 
 <img src="Example/ContentFitScrollView/ContentFitScrollViewStoryboardClass.png"/>
 

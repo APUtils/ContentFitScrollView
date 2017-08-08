@@ -22,7 +22,7 @@ public class ContentFitScrollView: UIScrollView {
     // MARK: - @IBOutlets
     //-----------------------------------------------------------------------------
     
-    @IBOutlet private var heightConstraintsCollection: [NSLayoutConstraint]!
+    @IBOutlet public var heightConstraintsCollection: [NSLayoutConstraint]!
     
     //-----------------------------------------------------------------------------
     // MARK: - Private Properties
