@@ -8,6 +8,9 @@ Released on 08/08/2017.
 #### Added
 - Carthage support
 
+#### Fixed
+- Public access to `ContentFitLayoutConstraint` fix
+
 ## [1.0.0](https://github.com/APUtils/ContentFitScrollView/releases/tag/1.0.0)
 Released on 07/10/2017.
 

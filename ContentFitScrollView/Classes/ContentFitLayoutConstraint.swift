@@ -10,7 +10,7 @@ import UIKit
 
 
 /// Custom constraint class to allow specify minimum height constant
-class ContentFitLayoutConstraint: NSLayoutConstraint {
+public class ContentFitLayoutConstraint: NSLayoutConstraint {
     /// Minimum allowed height for constraint
-    @IBInspectable var minimumHeight: CGFloat = 0
+    @IBInspectable public var minimumHeight: CGFloat = 0
 }
