@@ -29,9 +29,9 @@ Let's assume designer did his job well and provided you 1242x2208 images. In you
     <th>5s</th>
   </tr>
   <tr>
-    <td><img src="Example/default_7p" width="320"/></td>
-    <td><img src="Example/default_6s" width="320"/></td>
-    <td><img src="Example/default_5s" width="320"/></td>
+    <td><img src="Example/ContentFitScrollView/default_7p.png" width="320"/></td>
+    <td><img src="Example/ContentFitScrollView/default_6s.png" width="320"/></td>
+    <td><img src="Example/ContentFitScrollView/default_5s.png" width="320"/></td>
   </tr>
 </table>
 
@@ -44,9 +44,9 @@ Let's assume designer did his job well and provided you 1242x2208 images. In you
     <th>5s</th>
   </tr>
   <tr>
-    <td><img src="Example/contentFit_7p" width="320"/></td>
-    <td><img src="Example/contentFit_6s" width="320"/></td>
-    <td><img src="Example/contentFit_5s" width="320"/></td>
+    <td><img src="Example/ContentFitScrollView/contentFit_7p.png" width="320"/></td>
+    <td><img src="Example/ContentFitScrollView/contentFit_6s.png" width="320"/></td>
+    <td><img src="Example/ContentFitScrollView/contentFit_5s.png" width="320"/></td>
   </tr>
 </table>
 
@@ -61,9 +61,9 @@ Using `UILabel+Storyboard` extension from [APExtensions/Storyboard](https://gith
     <th>5s</th>
   </tr>
   <tr>
-    <td><img src="Example/apextensions_7p" width="320"/></td>
-    <td><img src="Example/apextensions_6s" width="320"/></td>
-    <td><img src="Example/apextensions_5s" width="320"/></td>
+    <td><img src="Example/ContentFitScrollView/apextensions_7p.png" width="320"/></td>
+    <td><img src="Example/ContentFitScrollView/apextensions_6s.png" width="320"/></td>
+    <td><img src="Example/ContentFitScrollView/apextensions_5s.png" width="320"/></td>
   </tr>
 </table>
 
