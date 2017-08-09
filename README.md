@@ -4,7 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/ContentFitScrollView.svg?style=flat)](http://cocoapods.org/pods/ContentFitScrollView)
 [![License](https://img.shields.io/cocoapods/l/ContentFitScrollView.svg?style=flat)](http://cocoapods.org/pods/ContentFitScrollView)
 [![Platform](https://img.shields.io/cocoapods/p/ContentFitScrollView.svg?style=flat)](http://cocoapods.org/pods/ContentFitScrollView)
-[![CI Status](http://img.shields.io/travis/anton-plebanovich/ContentFitScrollView.svg?style=flat)](https://travis-ci.org/anton-plebanovich/ContentFitScrollView)
+[![CI Status](http://img.shields.io/travis/APUtils/ContentFitScrollView.svg?style=flat)](https://travis-ci.org/APUtils/ContentFitScrollView)
 
 Self adjustable Scroll View that proportionally reducing provided height constraints constants to fit all content on screen without scrolling. It takes into account `ContentFitLayoutConstraint`'s `minimumHeight` value. If it's unable to fit content on screen without scrolling it'll just allow scrolling.
 
