@@ -14,9 +14,58 @@ Self adjustable Scroll View that proportionally reducing provided height constra
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## GIF animation
+## Images
 
-<img src="Example/ContentFitScrollView/ContentFitScrolViewClip.gif"/>
+About iPhone screens - https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions
+
+Let's assume designer did his job well and provided you 1242x2208 images. In your turn you did everything to match original. So 7 Plus images are ideal ones. Now lets compare how our interface will look like on other devices.
+
+#### Without `ContentFitScrollView`
+
+<table>
+  <tr>
+    <th>7 Plus</th>
+    <th>6s</th>
+    <th>5s</th>
+  </tr>
+  <tr>
+    <td><img src="Example/default_7p" width="320"/></td>
+    <td><img src="Example/default_6s" width="320"/></td>
+    <td><img src="Example/default_5s" width="320"/></td>
+  </tr>
+</table>
+
+#### With `ContentFitScrollView`
+
+<table>
+  <tr>
+    <th>7 Plus</th>
+    <th>6s</th>
+    <th>5s</th>
+  </tr>
+  <tr>
+    <td><img src="Example/contentFit_7p" width="320"/></td>
+    <td><img src="Example/contentFit_6s" width="320"/></td>
+    <td><img src="Example/contentFit_5s" width="320"/></td>
+  </tr>
+</table>
+
+#### With `ContentFitScrollView` + `APExtensions`
+
+Using `UILabel+Storyboard` extension from [APExtensions/Storyboard](https://github.com/APUtils/APExtensions#storyboard) to fit labels to screen size.
+
+<table>
+  <tr>
+    <th>7 Plus</th>
+    <th>6s</th>
+    <th>5s</th>
+  </tr>
+  <tr>
+    <td><img src="Example/apextensions_7p" width="320"/></td>
+    <td><img src="Example/apextensions_6s" width="320"/></td>
+    <td><img src="Example/apextensions_5s" width="320"/></td>
+  </tr>
+</table>
 
 ## Installation
 

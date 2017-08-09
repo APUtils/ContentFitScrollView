@@ -11,6 +11,7 @@ install! 'cocoapods',
 
 target 'ContentFitScrollView_Example' do
     pod 'ContentFitScrollView', :path => '../'
+    pod 'APExtensions'
 
     target 'ContentFitScrollView_Tests' do
         inherit! :search_paths

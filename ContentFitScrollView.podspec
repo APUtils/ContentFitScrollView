@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ContentFitScrollView'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'Self adjustable Scroll View that tries to fit all content on screen without scrolling.'
 
 # This description is used to generate tags and improve search results.

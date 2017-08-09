@@ -18,6 +18,15 @@
 		B06688ED1F13EFAA00A02878 /* ContentFitScrollViewStoryboardOutlets.png in Resources */ = {isa = PBXBuildFile; fileRef = B06688EB1F13EFAA00A02878 /* ContentFitScrollViewStoryboardOutlets.png */; };
 		B0A073A61F3A548E001B8CC6 /* podInstall.command in Resources */ = {isa = PBXBuildFile; fileRef = B0A073A51F3A548E001B8CC6 /* podInstall.command */; };
 		B0A073AA1F3A57D8001B8CC6 /* customClass.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A073A91F3A57D8001B8CC6 /* customClass.png */; };
+		B0A073B71F3B6B13001B8CC6 /* contentFit_7p.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A073B11F3B6B13001B8CC6 /* contentFit_7p.png */; };
+		B0A073B81F3B6B13001B8CC6 /* default_7p.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A073B21F3B6B13001B8CC6 /* default_7p.png */; };
+		B0A073B91F3B6B13001B8CC6 /* contentFit_6s.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A073B31F3B6B13001B8CC6 /* contentFit_6s.png */; };
+		B0A073BA1F3B6B13001B8CC6 /* default_6s.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A073B41F3B6B13001B8CC6 /* default_6s.png */; };
+		B0A073BB1F3B6B13001B8CC6 /* contentFit_5s.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A073B51F3B6B13001B8CC6 /* contentFit_5s.png */; };
+		B0A073BC1F3B6B13001B8CC6 /* default_5s.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A073B61F3B6B13001B8CC6 /* default_5s.png */; };
+		B0A073D41F3B820E001B8CC6 /* apextensions_5s.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A073D11F3B820E001B8CC6 /* apextensions_5s.png */; };
+		B0A073D51F3B820E001B8CC6 /* apextensions_6s.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A073D21F3B820E001B8CC6 /* apextensions_6s.png */; };
+		B0A073D61F3B820E001B8CC6 /* apextensions_7p.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A073D31F3B820E001B8CC6 /* apextensions_7p.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +55,18 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		690D93E971FF11E33D308DF3 /* Pods_ContentFitScrollView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContentFitScrollView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B845AB1BD6B79031EBD9BFB /* ContentFitScrollView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ContentFitScrollView.podspec; path = ../ContentFitScrollView.podspec; sourceTree = "<group>"; };
-		B06688E81F13ECBA00A02878 /* ContentFitScrolViewClip.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ContentFitScrolViewClip.gif; sourceTree = "<group>"; };
 		B06688EB1F13EFAA00A02878 /* ContentFitScrollViewStoryboardOutlets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ContentFitScrollViewStoryboardOutlets.png; sourceTree = "<group>"; };
 		B0A073A51F3A548E001B8CC6 /* podInstall.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = podInstall.command; sourceTree = "<group>"; };
 		B0A073A91F3A57D8001B8CC6 /* customClass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customClass.png; sourceTree = "<group>"; };
+		B0A073B11F3B6B13001B8CC6 /* contentFit_7p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contentFit_7p.png; sourceTree = "<group>"; };
+		B0A073B21F3B6B13001B8CC6 /* default_7p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_7p.png; sourceTree = "<group>"; };
+		B0A073B31F3B6B13001B8CC6 /* contentFit_6s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contentFit_6s.png; sourceTree = "<group>"; };
+		B0A073B41F3B6B13001B8CC6 /* default_6s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_6s.png; sourceTree = "<group>"; };
+		B0A073B51F3B6B13001B8CC6 /* contentFit_5s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contentFit_5s.png; sourceTree = "<group>"; };
+		B0A073B61F3B6B13001B8CC6 /* default_5s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_5s.png; sourceTree = "<group>"; };
+		B0A073D11F3B820E001B8CC6 /* apextensions_5s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apextensions_5s.png; sourceTree = "<group>"; };
+		B0A073D21F3B820E001B8CC6 /* apextensions_6s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apextensions_6s.png; sourceTree = "<group>"; };
+		B0A073D31F3B820E001B8CC6 /* apextensions_7p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apextensions_7p.png; sourceTree = "<group>"; };
 		C527519906171517D4F9A393 /* podPush.command */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; name = podPush.command; path = ../podPush.command; sourceTree = "<group>"; };
 		CF9755E1B3DCD2DCF469A761 /* .cocoadocs.yml */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = .cocoadocs.yml; path = ../.cocoadocs.yml; sourceTree = "<group>"; };
 		D2974FC5B6EC6D8F4CAC1C7B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -175,7 +192,6 @@
 		B06688E61F13EB3000A02878 /* _Gifs */ = {
 			isa = PBXGroup;
 			children = (
-				B06688E81F13ECBA00A02878 /* ContentFitScrolViewClip.gif */,
 			);
 			name = _Gifs;
 			sourceTree = "<group>";
@@ -183,8 +199,17 @@
 		B06688E71F13EB3400A02878 /* _Images */ = {
 			isa = PBXGroup;
 			children = (
-				B0A073A91F3A57D8001B8CC6 /* customClass.png */,
+				B0A073D11F3B820E001B8CC6 /* apextensions_5s.png */,
+				B0A073D21F3B820E001B8CC6 /* apextensions_6s.png */,
+				B0A073D31F3B820E001B8CC6 /* apextensions_7p.png */,
+				B0A073B51F3B6B13001B8CC6 /* contentFit_5s.png */,
+				B0A073B31F3B6B13001B8CC6 /* contentFit_6s.png */,
+				B0A073B11F3B6B13001B8CC6 /* contentFit_7p.png */,
 				B06688EB1F13EFAA00A02878 /* ContentFitScrollViewStoryboardOutlets.png */,
+				B0A073A91F3A57D8001B8CC6 /* customClass.png */,
+				B0A073B61F3B6B13001B8CC6 /* default_5s.png */,
+				B0A073B41F3B6B13001B8CC6 /* default_6s.png */,
+				B0A073B21F3B6B13001B8CC6 /* default_7p.png */,
 			);
 			name = _Images;
 			sourceTree = "<group>";
@@ -287,12 +312,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0A073B91F3B6B13001B8CC6 /* contentFit_6s.png in Resources */,
+				B0A073BC1F3B6B13001B8CC6 /* default_5s.png in Resources */,
+				B0A073D61F3B820E001B8CC6 /* apextensions_7p.png in Resources */,
 				B06688ED1F13EFAA00A02878 /* ContentFitScrollViewStoryboardOutlets.png in Resources */,
+				B0A073BA1F3B6B13001B8CC6 /* default_6s.png in Resources */,
 				B0A073A61F3A548E001B8CC6 /* podInstall.command in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				B0A073AA1F3A57D8001B8CC6 /* customClass.png in Resources */,
+				B0A073BB1F3B6B13001B8CC6 /* contentFit_5s.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				B0A073B71F3B6B13001B8CC6 /* contentFit_7p.png in Resources */,
+				B0A073D41F3B820E001B8CC6 /* apextensions_5s.png in Resources */,
+				B0A073D51F3B820E001B8CC6 /* apextensions_6s.png in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				B0A073B81F3B6B13001B8CC6 /* default_7p.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,10 +404,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ContentFitScrollView_Example/Pods-ContentFitScrollView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/APExtensions/APExtensions.framework",
 				"${BUILT_PRODUCTS_DIR}/ContentFitScrollView/ContentFitScrollView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APExtensions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ContentFitScrollView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
