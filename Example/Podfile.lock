@@ -2,7 +2,7 @@ PODS:
   - APExtensions (3.4.1):
     - APExtensions/ViewState (= 3.4.1)
   - APExtensions/ViewState (3.4.1)
-  - ContentFitScrollView (1.0.4)
+  - ContentFitScrollView (2.0.0)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
@@ -30,7 +30,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   APExtensions: 9acfde330109b7c0a115ab6a55dd7085c5415c92
-  ContentFitScrollView: 0b93356e2d80adcb91dd7d52027eaae4e8cc7124
+  ContentFitScrollView: e53f79950871ad55b2085538590b63a6acc47ac9
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
   Nimble-Snapshots: 31c8ef7fcebf0e68b4dff83f6e2160813a4a116b
