@@ -27,6 +27,7 @@
 		B0A073D41F3B820E001B8CC6 /* apextensions_5s.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A073D11F3B820E001B8CC6 /* apextensions_5s.png */; };
 		B0A073D51F3B820E001B8CC6 /* apextensions_6s.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A073D21F3B820E001B8CC6 /* apextensions_6s.png */; };
 		B0A073D61F3B820E001B8CC6 /* apextensions_7p.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A073D31F3B820E001B8CC6 /* apextensions_7p.png */; };
+		B0D3A02A1F7981200062AD2B /* podUpdate.command in Resources */ = {isa = PBXBuildFile; fileRef = B0D3A0291F7981200062AD2B /* podUpdate.command */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		B0A073D11F3B820E001B8CC6 /* apextensions_5s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apextensions_5s.png; sourceTree = "<group>"; };
 		B0A073D21F3B820E001B8CC6 /* apextensions_6s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apextensions_6s.png; sourceTree = "<group>"; };
 		B0A073D31F3B820E001B8CC6 /* apextensions_7p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apextensions_7p.png; sourceTree = "<group>"; };
+		B0D3A0291F7981200062AD2B /* podUpdate.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = podUpdate.command; sourceTree = "<group>"; };
 		C527519906171517D4F9A393 /* podPush.command */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; name = podPush.command; path = ../podPush.command; sourceTree = "<group>"; };
 		CF9755E1B3DCD2DCF469A761 /* .cocoadocs.yml */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = .cocoadocs.yml; path = ../.cocoadocs.yml; sourceTree = "<group>"; };
 		D2974FC5B6EC6D8F4CAC1C7B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				EF9854F75AFF06BB695DAA2F /* podCheck.command */,
 				B0A073A51F3A548E001B8CC6 /* podInstall.command */,
 				C527519906171517D4F9A393 /* podPush.command */,
+				B0D3A0291F7981200062AD2B /* podUpdate.command */,
 				D2974FC5B6EC6D8F4CAC1C7B /* README.md */,
 			);
 			name = _;
@@ -316,6 +319,7 @@
 				B0A073BC1F3B6B13001B8CC6 /* default_5s.png in Resources */,
 				B0A073D61F3B820E001B8CC6 /* apextensions_7p.png in Resources */,
 				B06688ED1F13EFAA00A02878 /* ContentFitScrollViewStoryboardOutlets.png in Resources */,
+				B0D3A02A1F7981200062AD2B /* podUpdate.command in Resources */,
 				B0A073BA1F3B6B13001B8CC6 /* default_6s.png in Resources */,
 				B0A073A61F3A548E001B8CC6 /* podInstall.command in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,

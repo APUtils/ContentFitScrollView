@@ -66,7 +66,7 @@ public class ContentFitScrollView: UIScrollView {
     
     private func fillConfigurationDictionary() {
         guard let heightConstraintsCollection = heightConstraintsCollection, !heightConstraintsCollection.isEmpty else {
-            print("ContentFitScrollView doesn't have constraints to resize")
+            NSLog("ContentFitScrollView doesn't have constraints to resize")
             return
         }
         
@@ -93,8 +93,20 @@ public class ContentFitScrollView: UIScrollView {
         previousBoundsSize = bounds.size
         previousContentSize = contentSize
         
-        let topInset = contentInset.top
-        let bottomInset = contentInset.bottom
+        let topInset: CGFloat
+        if #available(iOS 11.0, *) {
+            topInset = adjustedContentInset.top
+        } else {
+            topInset = contentInset.top
+        }
+        
+        let bottomInset: CGFloat
+        if #available(iOS 11.0, *) {
+            bottomInset = adjustedContentInset.bottom
+        } else {
+            bottomInset = contentInset.bottom
+        }
+        
         let contentSizeShortage = defaultContentHeight + topInset + bottomInset - frame.size.height
         
         guard contentSizeShortage > -0.001 else {
