@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 `ContentFitScrollView` adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.1.0](https://github.com/APUtils/ContentFitScrollView/releases/tag/2.1.0)
+Released on 09/29/2017.
+
+#### Added
+- Now also enlarge constraints to fill its frame
+
+
 ## [2.0.2](https://github.com/APUtils/ContentFitScrollView/releases/tag/2.0.2)
 Released on 09/29/2017.
 

@@ -26,7 +26,7 @@ public class ContentFitScrollView: UIScrollView {
     struct Properties {
         let defaultConstant: CGFloat
         let minimumHeight: CGFloat
-        let availableResizeHeightKey: CGFloat
+        let resizeCoef: CGFloat
     }
     
     //-----------------------------------------------------------------------------
@@ -59,8 +59,6 @@ public class ContentFitScrollView: UIScrollView {
     //-----------------------------------------------------------------------------
     
     private var configurationDictionary = Dictionary<NSLayoutConstraint, Properties>()
-    private var summaryAvailableLength: CGFloat = 0
-    private var defaultContentHeight: CGFloat!
     private var previousBoundsSize: CGSize = .zero
     private var previousContentSize: CGSize = .zero
     
@@ -77,11 +75,7 @@ public class ContentFitScrollView: UIScrollView {
     override public func layoutSubviews() {
         super.layoutSubviews()
         
-        if defaultContentHeight == nil {
-            defaultContentHeight = contentSize.height
-        }
-        
-        resizeIfNecessary()
+        resizeIfNeeded()
     }
     
     //-----------------------------------------------------------------------------
@@ -94,24 +88,27 @@ public class ContentFitScrollView: UIScrollView {
             return
         }
         
+        let summaryAvailableHeight: CGFloat = heightConstraintsCollection.reduce(0) { value, constraint in
+            return value + constraint.constant
+        }
+        
         for currentConstraint in heightConstraintsCollection {
             let constant = currentConstraint.constant
             let minimumHeight: CGFloat
-            let availableResizeHeight: CGFloat
+            let resizeCoef: CGFloat
             if let currentConstraint = currentConstraint as? ContentFitLayoutConstraint {
                 minimumHeight = currentConstraint.minimumHeight
-                availableResizeHeight = constant - minimumHeight
+                resizeCoef = constant / summaryAvailableHeight
             } else {
                 minimumHeight = 0
-                availableResizeHeight = constant
+                resizeCoef = constant / summaryAvailableHeight
             }
             
-            summaryAvailableLength += availableResizeHeight
-            configurationDictionary[currentConstraint] = Properties(defaultConstant: constant, minimumHeight: minimumHeight, availableResizeHeightKey: availableResizeHeight)
+            configurationDictionary[currentConstraint] = Properties(defaultConstant: constant, minimumHeight: minimumHeight, resizeCoef: resizeCoef)
         }
     }
     
-    private func resizeIfNecessary() {
+    private func resizeIfNeeded() {
         guard previousBoundsSize != bounds.size || previousContentSize != contentSize else { return }
         
         previousBoundsSize = bounds.size
@@ -131,16 +128,14 @@ public class ContentFitScrollView: UIScrollView {
             bottomInset = contentInset.bottom
         }
         
-        let contentSizeShortage = defaultContentHeight + topInset + bottomInset - frame.size.height
+        let contentSizeShortage = contentSize.height + topInset + bottomInset - frame.size.height
         
-        guard contentSizeShortage > -0.001 else {
-            restoreDefaultConstants()
-            isScrollEnabled = false
-            contentOffset.y = -topInset
-            return
+        var availableLength: CGFloat = 0
+        for (constraint, properties) in configurationDictionary {
+            availableLength += constraint.constant - properties.minimumHeight
         }
         
-        guard contentSizeShortage < summaryAvailableLength else {
+        guard contentSizeShortage < availableLength else {
             if useDefaultBehaviour {
                 restoreDefaultConstants()
             } else {
@@ -154,8 +149,10 @@ public class ContentFitScrollView: UIScrollView {
         isScrollEnabled = false
         contentOffset.y = -topInset
         for (constraint, properties) in configurationDictionary {
-            let resizeCoef = properties.availableResizeHeightKey / summaryAvailableLength
-            constraint.constant = properties.defaultConstant - contentSizeShortage * resizeCoef
+            var newConstant = constraint.constant - contentSizeShortage * properties.resizeCoef
+            newConstant = max(newConstant, properties.minimumHeight)
+            
+            constraint.constant = newConstant
         }
     }
     
