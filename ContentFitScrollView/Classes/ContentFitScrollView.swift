@@ -18,6 +18,11 @@ public class ContentFitScrollView: UIScrollView {
     // MARK: - Struct
     //-----------------------------------------------------------------------------
     
+    enum ScrollBehaviour {
+        case `default`
+        case minimal
+    }
+    
     struct Properties {
         let defaultConstant: CGFloat
         let minimumHeight: CGFloat
@@ -29,6 +34,25 @@ public class ContentFitScrollView: UIScrollView {
     //-----------------------------------------------------------------------------
     
     @IBOutlet public var heightConstraintsCollection: [NSLayoutConstraint]!
+    
+    //-----------------------------------------------------------------------------
+    // MARK: - @IBInspectable
+    //-----------------------------------------------------------------------------
+    
+    @IBInspectable public var useDefaultBehaviour: Bool {
+        get {
+            return scrollBehaviour == .default
+        }
+        set {
+            scrollBehaviour = newValue ? .default : .minimal
+        }
+    }
+    
+    //-----------------------------------------------------------------------------
+    // MARK: - Public Properties
+    //-----------------------------------------------------------------------------
+    
+    var scrollBehaviour: ScrollBehaviour = .default
     
     //-----------------------------------------------------------------------------
     // MARK: - Private Properties
@@ -117,7 +141,12 @@ public class ContentFitScrollView: UIScrollView {
         }
         
         guard contentSizeShortage < summaryAvailableLength else {
-            restoreDefaultConstants()
+            if useDefaultBehaviour {
+                restoreDefaultConstants()
+            } else {
+                setMinimumConstants()
+            }
+            
             isScrollEnabled = true
             return
         }
@@ -133,6 +162,12 @@ public class ContentFitScrollView: UIScrollView {
     private func restoreDefaultConstants() {
         for (constraint, properties) in configurationDictionary {
             constraint.constant = properties.defaultConstant
+        }
+    }
+    
+    private func setMinimumConstants() {
+        for (constraint, properties) in configurationDictionary {
+            constraint.constant = properties.minimumHeight
         }
     }
 }

@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 `ContentFitScrollView` adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.2](https://github.com/APUtils/ContentFitScrollView/releases/tag/2.0.2)
+Released on 09/29/2017.
+
+#### Added
+- @IBInspectable .useDefaultBehaviour to configure scroll behaviour from storyboard
+
+
 ## [2.0.1](https://github.com/APUtils/ContentFitScrollView/releases/tag/2.0.1)
 Released on 09/25/2017.
 
