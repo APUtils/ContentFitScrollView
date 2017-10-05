@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 `ContentFitScrollView` adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.2.0](https://github.com/APUtils/ContentFitScrollView/releases/tag/2.2.0)
+Released on 10/05/2017.
+
+#### Removed
+- Removed .useDefaultBehaviour property. Using minimum height by default.
+
+
 ## [2.1.0](https://github.com/APUtils/ContentFitScrollView/releases/tag/2.1.0)
 Released on 09/29/2017.
 

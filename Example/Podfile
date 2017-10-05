@@ -41,7 +41,7 @@ post_install do |installer|
     # Carthage support.
     # It puts `ContentFitLayoutConstraint.swift` into public headers so @IBInspectable won't be stripped out.
     headersBuildPhase = installer.pods_project.targets.select{ |x| x.name == 'ContentFitScrollView' }[0].headers_build_phase
-    publicHeaders = ['ContentFitLayoutConstraint.swift', 'ContentFitScrollView.swift']
+    publicHeaders = ['ContentFitLayoutConstraint.swift']
     headers = installer.pods_project.development_pods['ContentFitScrollView']
     headers.files.each { |additionHeader|
         next if not publicHeaders.include? additionHeader.path.split('/').last

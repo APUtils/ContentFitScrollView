@@ -15,13 +15,8 @@ import UIKit
 public class ContentFitScrollView: UIScrollView {
     
     //-----------------------------------------------------------------------------
-    // MARK: - Struct
+    // MARK: - Types
     //-----------------------------------------------------------------------------
-    
-    enum ScrollBehaviour {
-        case `default`
-        case minimal
-    }
     
     struct Properties {
         let defaultConstant: CGFloat
@@ -34,25 +29,6 @@ public class ContentFitScrollView: UIScrollView {
     //-----------------------------------------------------------------------------
     
     @IBOutlet public var heightConstraintsCollection: [NSLayoutConstraint]!
-    
-    //-----------------------------------------------------------------------------
-    // MARK: - @IBInspectable
-    //-----------------------------------------------------------------------------
-    
-    @IBInspectable public var useDefaultBehaviour: Bool {
-        get {
-            return scrollBehaviour == .default
-        }
-        set {
-            scrollBehaviour = newValue ? .default : .minimal
-        }
-    }
-    
-    //-----------------------------------------------------------------------------
-    // MARK: - Public Properties
-    //-----------------------------------------------------------------------------
-    
-    var scrollBehaviour: ScrollBehaviour = .default
     
     //-----------------------------------------------------------------------------
     // MARK: - Private Properties
@@ -84,7 +60,7 @@ public class ContentFitScrollView: UIScrollView {
     
     private func fillConfigurationDictionary() {
         guard let heightConstraintsCollection = heightConstraintsCollection, !heightConstraintsCollection.isEmpty else {
-            NSLog("ContentFitScrollView doesn't have constraints to resize")
+            NSLog("WARNING: ContentFitScrollView doesn't have constraints to resize")
             return
         }
         
@@ -136,12 +112,7 @@ public class ContentFitScrollView: UIScrollView {
         }
         
         guard contentSizeShortage < availableLength else {
-            if useDefaultBehaviour {
-                restoreDefaultConstants()
-            } else {
-                setMinimumConstants()
-            }
-            
+            setMinimumConstants()
             isScrollEnabled = true
             return
         }
