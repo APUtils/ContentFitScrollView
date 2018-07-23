@@ -55,7 +55,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		690D93E971FF11E33D308DF3 /* Pods_ContentFitScrollView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContentFitScrollView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B845AB1BD6B79031EBD9BFB /* ContentFitScrollView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ContentFitScrollView.podspec; path = ../ContentFitScrollView.podspec; sourceTree = "<group>"; };
+		8B845AB1BD6B79031EBD9BFB /* ContentFitScrollView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ContentFitScrollView.podspec; path = ../ContentFitScrollView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B06667E821061E0B00838D58 /* DEPLOY PROCESS.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "DEPLOY PROCESS.md"; sourceTree = "<group>"; };
 		B06688EB1F13EFAA00A02878 /* ContentFitScrollViewStoryboardOutlets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ContentFitScrollViewStoryboardOutlets.png; sourceTree = "<group>"; };
 		B0A073A51F3A548E001B8CC6 /* podInstall.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = podInstall.command; sourceTree = "<group>"; };
@@ -283,6 +283,7 @@
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
+						ProvisioningStyle = Manual;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -582,12 +583,15 @@
 			baseConfigurationReference = FEE4F0A067C4D4EDB4357BA2 /* Pods-ContentFitScrollView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ContentFitScrollView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anton-plebanovich.ContentFitScrollView-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
@@ -598,12 +602,15 @@
 			baseConfigurationReference = 0D608E5836AC40745A393CA8 /* Pods-ContentFitScrollView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ContentFitScrollView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anton-plebanovich.ContentFitScrollView-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};

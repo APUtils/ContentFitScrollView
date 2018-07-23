@@ -1,4 +1,4 @@
-- Assure project compile properly
+- Assure `ContentFitScrollView.xcodeproj` and `Example/ContentFitScrollView.xcworkspace` projects compile properly
 - Change version in podspec
 - Update CHANGELOG.md
 - Push changes in git

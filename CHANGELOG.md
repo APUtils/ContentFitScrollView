@@ -3,6 +3,13 @@ All notable changes to this project will be documented in this file.
 `ContentFitScrollView` adheres to [Semantic Versioning](http://semver.org/).
 
 
+## [2.3.1](https://github.com/APUtils/ContentFitScrollView/releases/tag/2.3.1)
+Released on 07/23/2018.
+
+#### Fixed
+- Carthage build fix.
+
+
 ## [2.3.0](https://github.com/APUtils/ContentFitScrollView/releases/tag/2.3.0)
 Released on 07/23/2018.
 
