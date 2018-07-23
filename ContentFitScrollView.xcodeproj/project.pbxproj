@@ -10,6 +10,8 @@
 		B06667F92106269800838D58 /* ContentFitScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = B06667F72106269800838D58 /* ContentFitScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B06668012106271C00838D58 /* ContentFitLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06667FF2106271C00838D58 /* ContentFitLayoutConstraint.swift */; };
 		B06668022106271C00838D58 /* ContentFitScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06668002106271C00838D58 /* ContentFitScrollView.swift */; };
+		B06668032106287C00838D58 /* ContentFitLayoutConstraint.swift in Headers */ = {isa = PBXBuildFile; fileRef = B06667FF2106271C00838D58 /* ContentFitLayoutConstraint.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		B06668042106287C00838D58 /* ContentFitScrollView.swift in Headers */ = {isa = PBXBuildFile; fileRef = B06668002106271C00838D58 /* ContentFitScrollView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B06667F92106269800838D58 /* ContentFitScrollView.h in Headers */,
+				B06668032106287C00838D58 /* ContentFitLayoutConstraint.swift in Headers */,
+				B06668042106287C00838D58 /* ContentFitScrollView.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
