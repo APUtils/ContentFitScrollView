@@ -1,6 +1,0 @@
-framework module ContentFitScrollView {
-  umbrella header "ContentFitScrollView-umbrella.h"
-
-  export *
-  module * { export * }
-}

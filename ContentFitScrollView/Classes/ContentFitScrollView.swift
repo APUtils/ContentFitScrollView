@@ -14,9 +14,7 @@ import UIKit
 /// If it's unable to fit content on screen without scrolling it'll just allow scrolling.
 public class ContentFitScrollView: UIScrollView {
     
-    //-----------------------------------------------------------------------------
-    // MARK: - Types
-    //-----------------------------------------------------------------------------
+    // ******************************* MARK: - Types
     
     struct Properties {
         let defaultConstant: CGFloat
@@ -24,23 +22,24 @@ public class ContentFitScrollView: UIScrollView {
         let resizeCoef: CGFloat
     }
     
-    //-----------------------------------------------------------------------------
-    // MARK: - @IBOutlets
-    //-----------------------------------------------------------------------------
+    // ******************************* MARK: - @IBInspectable
     
+    /// Should scroll view enlarge content to fit all available space?
+    /// True by default.
+    @IBInspectable public var enlargeContent: Bool = true
+    
+    // ******************************* MARK: - @IBOutlets
+    
+    /// Height constraints to modify
     @IBOutlet public var heightConstraintsCollection: [NSLayoutConstraint]!
     
-    //-----------------------------------------------------------------------------
-    // MARK: - Private Properties
-    //-----------------------------------------------------------------------------
+    // ******************************* MARK: - Private Properties
     
     private var configurationDictionary = Dictionary<NSLayoutConstraint, Properties>()
     private var previousBoundsSize: CGSize = .zero
     private var previousContentSize: CGSize = .zero
     
-    //-----------------------------------------------------------------------------
-    // MARK: - UIView Methods
-    //-----------------------------------------------------------------------------
+    // ******************************* MARK: - UIView Methods
     
     override public func awakeFromNib() {
         super.awakeFromNib()
@@ -54,9 +53,7 @@ public class ContentFitScrollView: UIScrollView {
         resizeIfNeeded()
     }
     
-    //-----------------------------------------------------------------------------
-    // MARK: - Private Methods
-    //-----------------------------------------------------------------------------
+    // ******************************* MARK: - Private Methods
     
     private func fillConfigurationDictionary() {
         guard let heightConstraintsCollection = heightConstraintsCollection, !heightConstraintsCollection.isEmpty else {
@@ -122,6 +119,7 @@ public class ContentFitScrollView: UIScrollView {
         for (constraint, properties) in configurationDictionary {
             var newConstant = constraint.constant - contentSizeShortage * properties.resizeCoef
             newConstant = max(newConstant, properties.minimumHeight)
+            if !enlargeContent { newConstant = min(newConstant, properties.defaultConstant) }
             
             constraint.constant = newConstant
         }

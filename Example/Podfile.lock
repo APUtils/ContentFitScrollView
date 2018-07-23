@@ -8,7 +8,7 @@ PODS:
   - APExtensions/Core (4.1.0)
   - APExtensions/Storyboard (4.1.0)
   - APExtensions/ViewState (4.1.0)
-  - ContentFitScrollView (2.0.1)
+  - ContentFitScrollView (2.3.0)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
@@ -30,18 +30,26 @@ DEPENDENCIES:
   - Nimble-Snapshots
   - Quick
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - APExtensions
+    - FBSnapshotTestCase
+    - Nimble
+    - Nimble-Snapshots
+    - Quick
+
 EXTERNAL SOURCES:
   ContentFitScrollView:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   APExtensions: 4d17a7dedeb6fde2dae2a59186fdd39042dd8d54
-  ContentFitScrollView: 5bb8368940a46b4be855446094750b6b162d1203
+  ContentFitScrollView: 260618a9273e2ea274f79362754a0503549d8a7b
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
   Nimble-Snapshots: 31c8ef7fcebf0e68b4dff83f6e2160813a4a116b
   Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
 
-PODFILE CHECKSUM: c90e15cfc32d1b4cf3328fa9fed75b1d631e2d71
+PODFILE CHECKSUM: ca15c4a183db0595e1dc1c78fbb76e080db85840
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.0

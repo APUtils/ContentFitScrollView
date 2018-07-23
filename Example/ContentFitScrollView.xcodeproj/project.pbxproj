@@ -56,6 +56,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		690D93E971FF11E33D308DF3 /* Pods_ContentFitScrollView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContentFitScrollView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B845AB1BD6B79031EBD9BFB /* ContentFitScrollView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ContentFitScrollView.podspec; path = ../ContentFitScrollView.podspec; sourceTree = "<group>"; };
+		B06667E821061E0B00838D58 /* DEPLOY PROCESS.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "DEPLOY PROCESS.md"; sourceTree = "<group>"; };
 		B06688EB1F13EFAA00A02878 /* ContentFitScrollViewStoryboardOutlets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ContentFitScrollViewStoryboardOutlets.png; sourceTree = "<group>"; };
 		B0A073A51F3A548E001B8CC6 /* podInstall.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = podInstall.command; sourceTree = "<group>"; };
 		B0A073A91F3A57D8001B8CC6 /* customClass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customClass.png; sourceTree = "<group>"; };
@@ -171,6 +172,7 @@
 				019160A850CF5286216301AF /* .travis.yml */,
 				1EE95ED3C2FB57417923AEBB /* CHANGELOG.md */,
 				8B845AB1BD6B79031EBD9BFB /* ContentFitScrollView.podspec */,
+				B06667E821061E0B00838D58 /* DEPLOY PROCESS.md */,
 				EBC2CCBEC83E763B2DC76083 /* LICENSE */,
 				EF9854F75AFF06BB695DAA2F /* podCheck.command */,
 				B0A073A51F3A548E001B8CC6 /* podInstall.command */,
@@ -238,7 +240,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				6B15822404EEA84E8F1A9414 /* [CP] Embed Pods Frameworks */,
-				88B7B7195BC6008B41D19B67 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,7 +259,6 @@
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
 				2B5FA7AF42BD4B1F69EA17DF /* [CP] Embed Pods Frameworks */,
-				31FD8FE876AB1F975318E274 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,7 +277,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -386,21 +386,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContentFitScrollView_Tests/Pods-ContentFitScrollView_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		31FD8FE876AB1F975318E274 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContentFitScrollView_Tests/Pods-ContentFitScrollView_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6B15822404EEA84E8F1A9414 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -419,21 +404,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContentFitScrollView_Example/Pods-ContentFitScrollView_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		88B7B7195BC6008B41D19B67 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContentFitScrollView_Example/Pods-ContentFitScrollView_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FEB9DE80E2B60E823F70047A /* [CP] Check Pods Manifest.lock */ = {
@@ -516,12 +486,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -569,12 +541,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

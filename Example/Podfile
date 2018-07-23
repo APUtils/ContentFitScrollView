@@ -25,6 +25,11 @@ end
 
 
 post_install do |installer|
+    # Add podInstall.command and podUpdate.command shell scripts to Pods project
+    pods_project = installer.pods_project
+    pods_project.new_file "../podInstall.command"
+    pods_project.new_file "../podUpdate.command"
+    
     # TODO: Remove pods when they converted to Swift 4
     # Your list of targets here.
     myTargets = ['Quick', 'Nimble', 'Nimble-Snapshots']
@@ -39,9 +44,9 @@ post_install do |installer|
     
     
     # Carthage support.
-    # It puts `ContentFitLayoutConstraint.swift` into public headers so @IBInspectable won't be stripped out.
+    # It puts `ContentFitLayoutConstraint.swift` and `ContentFitScrollView.swift` into public headers so @IBInspectable won't be stripped out.
     headersBuildPhase = installer.pods_project.targets.select{ |x| x.name == 'ContentFitScrollView' }[0].headers_build_phase
-    publicHeaders = ['ContentFitLayoutConstraint.swift']
+    publicHeaders = ['ContentFitLayoutConstraint.swift', 'ContentFitScrollView.swift']
     headers = installer.pods_project.development_pods['ContentFitScrollView']
     headers.files.each { |additionHeader|
         next if not publicHeaders.include? additionHeader.path.split('/').last

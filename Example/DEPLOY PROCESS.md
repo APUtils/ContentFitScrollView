@@ -1,0 +1,6 @@
+- Assure project compile properly
+- Change version in podspec
+- Update CHANGELOG.md
+- Push changes in git
+- Add git tag
+- Run `podPush.command`
