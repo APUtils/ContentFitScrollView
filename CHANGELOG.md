@@ -3,6 +3,13 @@ All notable changes to this project will be documented in this file.
 `ContentFitScrollView` adheres to [Semantic Versioning](http://semver.org/).
 
 
+## [3.0.0](https://github.com/APUtils/ContentFitScrollView/releases/tag/3.0.0)
+Released on 12/30/2018.
+
+#### Added
+- Swift 4.2
+
+
 ## [2.3.1](https://github.com/APUtils/ContentFitScrollView/releases/tag/2.3.1)
 Released on 07/23/2018.
 
